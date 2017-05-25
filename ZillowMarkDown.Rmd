@@ -20,7 +20,7 @@ suppressMessages(library(corrplot))
 suppressMessages(library(leaflet))
 suppressMessages(library(lubridate))
 
-#suppressMessages(install.packages("lubridate"))
+#suppressMessages(install.packages("git"))
 #setwd("/media/chilambuselvan/Studies & OS files/Analytics/Zillow/Zillow/Data")
 if (!exists("properties"))
 {
@@ -29,4 +29,4 @@ transactions <- fread('/media/chilambuselvan/Studies & OS files/Analytics/Zillow
 sample_submission <- fread('/media/chilambuselvan/Studies & OS files/Analytics/Zillow/Zillow/Data/sample_submission.csv')
 }
 
-```
+``` 
