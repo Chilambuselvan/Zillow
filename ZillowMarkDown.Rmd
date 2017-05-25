@@ -1,0 +1,32 @@
+---
+title: "ZillowMarkDown"
+author: "Chilambuselvan"
+date: "May 25, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+### Read in the data
+```{r message=FALSE, warning=FALSE}
+suppressMessages(library(data.table))
+suppressMessages(library(dplyr))
+suppressMessages(library(ggplot2))
+suppressMessages(library(knitr))
+suppressMessages(library(DT))
+suppressMessages(library(tidyr))
+suppressMessages(library(corrplot))
+suppressMessages(library(leaflet))
+suppressMessages(library(lubridate))
+
+#suppressMessages(install.packages("lubridate"))
+#setwd("/media/chilambuselvan/Studies & OS files/Analytics/Zillow/Zillow/Data")
+if (!exists("properties"))
+{
+properties <- fread('/media/chilambuselvan/Studies & OS files/Analytics/Zillow/Zillow/Data/properties_2016.csv', showProgress = FALSE)
+transactions <- fread('/media/chilambuselvan/Studies & OS files/Analytics/Zillow/Zillow/Data/train_2016.csv', showProgress = FALSE)
+sample_submission <- fread('/media/chilambuselvan/Studies & OS files/Analytics/Zillow/Zillow/Data/sample_submission.csv')
+}
+
+```
